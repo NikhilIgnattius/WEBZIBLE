@@ -33,8 +33,6 @@ function accessibilityButton() {
   iframe.src = "./widget.html";
   document.body.appendChild(iframe);
 
-  // Preload iframe content once
-  
 
   // Toggle iframe visibility on button click
   let isIframeVisible = false;
