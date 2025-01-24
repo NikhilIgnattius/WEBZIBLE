@@ -3,7 +3,6 @@ function accessibilityButton() {
   document.head.appendChild(style);
   const sheet = style.sheet;
 
-  // Adding CSS rules dynamically
   const cssRules = [
     `.accessibility-button { height: 50px; width: 50px; position: fixed; right: 20px; bottom: 30px; z-index: 99999; transition: 0.3s; }`,
     `.accessibility-button:hover { transform: scale(1.2); }`,
