@@ -1,4 +1,5 @@
 import contrastChanger from "./contrastChanger.js";
+import highlightLink from "./highlightLinks.js";
 
 function change(){
 
@@ -13,3 +14,5 @@ function print(message) {
 }
 
 document.getElementById("contrastChange").addEventListener("click",contrastChanger);
+document.getElementById("highlightLinks").addEventListener("click",highlightLink);
+
