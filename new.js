@@ -42,7 +42,8 @@ function accessibilityButton() {
     isIframeVisible = !isIframeVisible;
     iframe.style.display = isIframeVisible ? "block" : "none";
     iframe.style.height = "100vh";
-    iframe.style.width = "100vw"
+    iframe.style.width = "100vw";
+    iframe.style.backgroundColor = "rgba(0,0,0,0)"
 
   });
 }
