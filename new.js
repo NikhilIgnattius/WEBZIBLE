@@ -41,8 +41,6 @@ function accessibilityButton() {
   accessibilityButton.addEventListener("click", () => {
     isIframeVisible = !isIframeVisible;
     iframe.style.display = isIframeVisible ? "block" : "none";
-    iframe.style.height = "100vh";
-    iframe.style.width = "100vw";
   });
 }
 
