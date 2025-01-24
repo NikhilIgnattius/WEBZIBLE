@@ -1,4 +1,4 @@
-export function highlightLinks() {
+export default function highlightLinks() {
   let isStyleApplied = false; 
 
   const toggleStyles = () => {
