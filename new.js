@@ -6,7 +6,7 @@ function accessibilityButton() {
   const cssRules = [
     `.accessibility-button { height: 50px; width: 50px; position: fixed; right: 20px; bottom: 30px; z-index: 99999; transition: 0.3s; }`,
     `.accessibility-button:hover { transform: scale(1.2); }`,
-    `iframe { position: fixed; right: 0; top: 0; width: 100vw; height: 100vh; display: none; z-index: 99998;background: transparent; border:none; }`,
+    `iframe { position: fixed; right: 0; top: 0; width: 100vw; height: 100vh; display: none; z-index: 99998;background-color: blue; border:none; }`,
   ];
 
   cssRules.forEach((rule) => sheet.insertRule(rule, sheet.cssRules.length));
