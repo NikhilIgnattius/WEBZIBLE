@@ -1,14 +1,14 @@
-import contrastChanger from "./contrastChanger.js";
-import highlightLink from "./highlightLinks.js";
-import biggerText from "./biggerText.js";
-import increaseLineHeight from "./lineHeight.js";
-import saturationChange from "./saturation.js";
-import cursorChanger from "./cursor.js";
-import changeAlignment from "./textAlignment.js";
-import textSpacing from "./textSpacing.js";
-import changeText from "./legibleFonts.js";
-import hideImages from "./hideImages.js";
-import toolTip from "./toolTips.js";
+import contrastChanger from "https://nikhilignattius.github.io/WEBZIBLE/contrastChanger.js";
+import highlightLink from "https://nikhilignattius.github.io/WEBZIBLE/highlightLinks.js";
+import biggerText from "https://nikhilignattius.github.io/WEBZIBLE/biggerText.js";
+import increaseLineHeight from "https://nikhilignattius.github.io/WEBZIBLE/lineHeight.js";
+import saturationChange from "https://nikhilignattius.github.io/WEBZIBLE/saturation.js";
+import cursorChanger from "https://nikhilignattius.github.io/WEBZIBLE/cursor.js";
+import changeAlignment from "https://nikhilignattius.github.io/WEBZIBLE/textAlignment.js";
+import textSpacing from "https://nikhilignattius.github.io/WEBZIBLE/textSpacing.js";
+import changeText from "https://nikhilignattius.github.io/WEBZIBLE/legibleFonts.js";
+import hideImages from "https://nikhilignattius.github.io/WEBZIBLE/hideImages.js";
+import toolTip from "https://nikhilignattius.github.io/WEBZIBLE/toolTips.js";
 
 const parentDocument = window.parent.document;
 
