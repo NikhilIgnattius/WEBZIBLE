@@ -1,6 +1,6 @@
 import contrastChanger from "https://nikhilignattius.github.io/WEBZIBLE/contrastChanger.js";
 import highlightLink from "https://nikhilignattius.github.io/WEBZIBLE/highlightLinks.js";
-import biggerText from "https://nikhilignattius.github.io/WEBZIBLE/biggerText.js";
+// import biggerText from "https://nikhilignattius.github.io/WEBZIBLE/biggerText.js";
 import increaseLineHeight from "https://nikhilignattius.github.io/WEBZIBLE/lineHeight.js";
 import saturationChange from "https://nikhilignattius.github.io/WEBZIBLE/saturation.js";
 import cursorChanger from "https://nikhilignattius.github.io/WEBZIBLE/cursor.js";
