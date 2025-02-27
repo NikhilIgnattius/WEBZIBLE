@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Alt to Images</title>
+</head>
+<style>
+    .small{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
+<body>
+
+    <div id="image-container" style="border: 1px solid black;">
+        <img src="https://via.placeholder.com/150" alt="hello">
+        <img src="https://via.placeholder.com/150/0000FF" alt="">
+        <img src="https://via.placeholder.com/150/FF0000" alt="">
+        <img src="https://smallbusinessbonfire.com/wp-content/uploads/2024/10/authentic-person.png" alt="" style="height: 200px;width: 200px;">
+    </div>
+
+
+    <div id="input-container"></div>
+    <button id="apply-alt">Apply Alt Text</button>
+
+    <script>
+        function generateAltInputForm() {
+            const images = document.querySelectorAll('#image-container img');
+            const inputContainer = document.getElementById('input-container');
+            images.forEach((img, index) => {
+                
+                const pic = document.createElement("img");
+                pic.classList.add("small");
+                let att = document.createAttribute("src");
+                att.value = img.getAttribute("src");
+                pic.setAttributeNode(att);
+
+                const label = document.createElement('label');
+                label.textContent = `Want AI Suggestion For Image ${index + 1}? `;
+                label.htmlFor = `alt-input-${index}`;
+                const ai = document.createElement('button')
+                let att2 = document.createAttribute('type');
+                att2.value = "button";
+                let att3 = document.createTextNode("Click");
+                ai.appendChild(att3);
+                ai.setAttributeNode(att2);
+
+
+                // const label = document.createElement('label');
+                // label.textContent = `Alt text for Image ${index + 1}: `;
+                // label.htmlFor = `alt-input-${index}`;
+
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.id = `alt-input-${index}`;
+                input.placeholder = "Enter alt text here";
+                input.value = img.alt || ''; 
+
+                const wrapper = document.createElement('div');
+                wrapper.appendChild(pic);
+                wrapper.appendChild(label);
+                wrapper.appendChild(ai);
+                wrapper.appendChild(input);
+
+                inputContainer.appendChild(wrapper);
+            });
+        }
+
+        function applyAltToImages() {
+            const images = document.querySelectorAll('#image-container img');
+            images.forEach((img, index) => {
+                const input = document.getElementById(`alt-input-${index}`);
+                if (input) {
+                    img.alt = input.value.trim();
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            generateAltInputForm();
+            const applyButton = document.getElementById('apply-alt');
+            applyButton.addEventListener('click', applyAltToImages);
+        });
+
+    </script>
+</body>
+</html>
